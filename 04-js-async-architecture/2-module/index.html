@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Modules javascript</title>
+</head>
+<body>
+
+    <script type="module" src="./script/say.js"></script>
+
+    <script type="module">
+        import {sayHello, sayGoodbye, months} from "./script/say.js";
+
+        sayHello("albab")
+        sayGoodbye("uwan")
+        sayGoodbye("udin")
+        console.log(months[0])
+        console.log(months[1])
+        console.log(months[2])
+        console.log(months[3])
+        console.log(months[4])
+        console.log(months[5])
+        console.log(months[6])
+    </script>
+</body>
+</html>

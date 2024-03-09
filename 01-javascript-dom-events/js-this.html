@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="button" value="berkendara dengan mobil apa hari ini" onclick="kendaraan.call(mobil, 200)"/>
+    <p id="text_mobil"></p>
+
+    <script>
+
+        // const mobil = {
+        //     merk: "Lamborghini",
+        //     model: "Aventador",
+
+        //     kendaraan(kmh) {
+        //     console.log(`Berkendara Dengan mobil ${this.merk} ${this.model} dengan kecepatan ${kmh}`)
+        //     }
+
+        // }
+       
+        
+        //=========================================================================//
+        
+        // mobil.kendaraan = function(){
+        //     console.log(`Berkendara Dengan mobil ${this.merk} ${this.model}`)
+        // }
+            
+        // mobil.kendaraan();
+                
+                
+        //=========================================================================//
+        
+
+        // const kendaraan = function() {
+        //     console.log(`Berkendara Dengan mobil ${this.merk} ${this.model}`)
+        // }.bind(mobil)
+          
+        // kendaraan()
+
+        //=========================================================================//
+
+        const mobil_lain = {
+            merk: "BMW",
+            model: "A8"
+        }
+
+        // mobil.kendaraan.bind(mobil_lain)();
+        
+        //=========================================================================//
+        
+        const mobil = {
+            merk: "Lamborghini",
+            model: "Aventador",
+        }
+        
+        let kendaraan = function(kmh) {
+            document.getElementById("text_mobil").innerHTML = (`Berkendara Dengan mobil ${this.merk} ${this.model} dengan kecepatan ${kmh} km/jam`)
+        }
+        
+    </script>
+</body>
+</html>
